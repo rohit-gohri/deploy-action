@@ -10,4 +10,5 @@ LABEL "homepage"="http://github.com/rohit-smpx/deploy-actions"
 LABEL "maintainer"="Rohit Gohri <gohri.rohit@gmail.com>"
 
 ADD entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
